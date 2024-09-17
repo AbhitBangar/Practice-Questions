@@ -42,6 +42,85 @@
         </tbody>
     </table>
 
+    <hr>
+
     <!-- Qs2. -->
+    <form action="/server">
+        <div>
+            <label for="fname">Name:</label>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <br>
+        <div>
+            <lable for="sex">Sex:</lable>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <lable for="female">Female</lable>
+        </div>
+        <br>
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="slec" selected>Select an option</option>
+                <option value="ind">India</option>
+                <option value="nep">Nepal</option>
+                <option value="us">USA</option>
+                <option value="cand">Canada</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <lable for="message">Message:</lable><br>
+            <textarea id="message" name="message" rows="4" cols="28"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="sub" id="sub">
+            <label for="sub">Subscribe?</label>
+        </div>
+        <br>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Qs3. -->
+    <h1><b>Feedback Form</b></h1>
+    <form action="/server">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Write your name" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Write your email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="msg">Message:</label><br>
+            <textarea id="msg" name="message" rows="4" cols="28"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="rateus">Rate us out of 5:</label><br>
+            <input type="radio" name="1" id="1" value="1">
+            <label for="1">1</label>
+            <br>
+            <input type="radio" name="2" id="2" value="2">
+            <label for="2">2</label>
+            <br>
+            <input type="radio" name="3" id="3" value="3">
+            <label for="3">3</label>
+            <br>
+            <input type="radio" name="4" id="4" value="4">
+            <label for="4">4</label>
+        </div>
+        <br>
+        <button>Send your message!</button>
+    </form>
 </body>
 </html>
